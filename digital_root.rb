@@ -1,7 +1,7 @@
 def digital_root(number)
   sum = number.digits.sum
   
-  return sum if sum.digits.length == 1
+  return sum if sum < 10
   digital_root(sum)
 end
 
